@@ -48,7 +48,7 @@ def index():
         # Create IoTHubRegistryManager
             registry_manager = IoTHubRegistryManager(CONNECTION_STRING)
 
-            print ( 'Sending message: {0}'.format(i) )
+            #print ( 'Sending message: {0}'.format(i) )
             data = json.dumps(res)
 
             props={}
