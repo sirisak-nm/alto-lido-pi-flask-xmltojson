@@ -1,0 +1,314 @@
+192.168.25.125 - - [19/Jul/2021 13:38:07] "POST /axis2/services/FIAPStorage HTTP/1.1" 200 -
+INFO:root:POST request,
+Path: /axis2/services/FIAPStorage
+Headers:
+Content-Type: text/xml charset=UTF-8
+User-Agent: FIAPUploadAgent (STM32F4 MCU)
+Host: 192.168.25.155
+SOAPAction: "http://soap.fiap.org/data"
+Content-Length: 14264
+
+
+
+Body:
+<?xml version="1.0" encoding="UTF-8" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+<ns2:dataRQ xmlns:ns2="http://soap.fiap.org/">
+<transport xmlns="http://gutp.jp/fiap/2009/11/">
+<body>
+<pointSet id="http://bems.smartive.co.th/lido/floor1/control/mbm1/">
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy01">
+<value time="2021-06-22T05:15:00+07:00">34.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy02">
+<value time="2021-06-22T05:15:00+07:00">943.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy03">
+<value time="2021-06-22T05:15:00+07:00">980.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy04">
+<value time="2021-06-22T05:15:00+07:00">1.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy05">
+<value time="2021-06-22T05:15:00+07:00">1139.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy06">
+<value time="2021-06-22T05:15:00+07:00">860.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy07">
+<value time="2021-06-22T05:15:00+07:00">576.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy08">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy09">
+<value time="2021-06-22T05:15:00+07:00">603.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy10">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy11">
+<value time="2021-06-22T05:15:00+07:00">18.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy12">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy13">
+<value time="2021-06-22T05:15:00+07:00">3.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy14">
+<value time="2021-06-22T05:15:00+07:00">312.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy15">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy16">
+<value time="2021-06-22T05:15:00+07:00">226.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy17">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy18">
+<value time="2021-06-22T05:15:00+07:00">118.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy19">
+<value time="2021-06-22T05:15:00+07:00">202.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy20">
+<value time="2021-06-22T05:15:00+07:00">9.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy21">
+<value time="2021-06-22T05:15:00+07:00">297.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy22">
+<value time="2021-06-22T05:15:00+07:00">13.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy23">
+<value time="2021-06-22T05:15:00+07:00">15.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy24">
+<value time="2021-06-22T05:15:00+07:00">13.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy25">
+<value time="2021-06-22T05:15:00+07:00">470.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy26">
+<value time="2021-06-22T05:15:00+07:00">421.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy27">
+<value time="2021-06-22T05:15:00+07:00">310.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy28">
+<value time="2021-06-22T05:15:00+07:00">20.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy29">
+<value time="2021-06-22T05:15:00+07:00">11.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy30">
+<value time="2021-06-22T05:15:00+07:00">55.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy31">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy32">
+<value time="2021-06-22T05:15:00+07:00">3.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy33">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy34">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy35">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy36">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy37">
+<value time="2021-06-22T05:15:00+07:00">5.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy38">
+<value time="2021-06-22T05:15:00+07:00">463.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy39">
+<value time="2021-06-22T05:15:00+07:00">1.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy40">
+<value time="2021-06-22T05:15:00+07:00">504.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy41">
+<value time="2021-06-22T05:15:00+07:00">4.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy42">
+<value time="2021-06-22T05:15:00+07:00">1.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy43">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy44">
+<value time="2021-06-22T05:15:00+07:00">3465.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy45">
+<value time="2021-06-22T05:15:00+07:00">0.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy46">
+<value time="2021-06-22T05:15:00+07:00">2953.20</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy47">
+<value time="2021-06-22T05:15:00+07:00">0.60</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/Energy48">
+<value time="2021-06-22T05:15:00+07:00">2238.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy01">
+<value time="2021-06-22T05:15:00+07:00">9061565.55</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy02">
+<value time="2021-06-22T05:15:00+07:00">18354386.36</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy03">
+<value time="2021-06-22T05:15:00+07:00">13104642.24</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy04">
+<value time="2021-06-22T05:15:00+07:00">6424959.37</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy05">
+<value time="2021-06-22T05:15:00+07:00">25722416.58</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy06">
+<value time="2021-06-22T05:15:00+07:00">11447783.82</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy07">
+<value time="2021-06-22T05:15:00+07:00">9084373.78</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy08">
+<value time="2021-06-22T05:15:00+07:00">8887.55</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy09">
+<value time="2021-06-22T05:15:00+07:00">9514850.99</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy10">
+<value time="2021-06-22T05:15:00+07:00">7285.63</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy11">
+<value time="2021-06-22T05:15:00+07:00">461832.12</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy12">
+<value time="2021-06-22T05:15:00+07:00">9999998558.98</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy13">
+<value time="2021-06-22T05:15:00+07:00">15843284.55</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy14">
+<value time="2021-06-22T05:15:00+07:00">5045918.12</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy15">
+<value time="2021-06-22T05:15:00+07:00">16024492.73</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy16">
+<value time="2021-06-22T05:15:00+07:00">2639889.10</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy17">
+<value time="2021-06-22T05:15:00+07:00">15507479.51</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy18">
+<value time="2021-06-22T05:15:00+07:00">2274373.25</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy19">
+<value time="2021-06-22T05:15:00+07:00">4061508.25</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy20">
+<value time="2021-06-22T05:15:00+07:00">5204703.91</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy21">
+<value time="2021-06-22T05:15:00+07:00">6054093.13</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy22">
+<value time="2021-06-22T05:15:00+07:00">4537552.56</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy23">
+<value time="2021-06-22T05:15:00+07:00">280021.52</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy24">
+<value time="2021-06-22T05:15:00+07:00">4949851.97</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy25">
+<value time="2021-06-22T05:15:00+07:00">4938127.98</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy26">
+<value time="2021-06-22T05:15:00+07:00">6752260.69</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy27">
+<value time="2021-06-22T05:15:00+07:00">3247036.47</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy28">
+<value time="2021-06-22T05:15:00+07:00">306580.27</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy29">
+<value time="2021-06-22T05:15:00+07:00">122076.28</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy30">
+<value time="2021-06-22T05:15:00+07:00">1084181.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy31">
+<value time="2021-06-22T05:15:00+07:00">5572055.66</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy32">
+<value time="2021-06-22T05:15:00+07:00">56408.86</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy33">
+<value time="2021-06-22T05:15:00+07:00">4860095.61</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy34">
+<value time="2021-06-22T05:15:00+07:00">35.34</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy35">
+<value time="2021-06-22T05:15:00+07:00">4887093.80</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy36">
+<value time="2021-06-22T05:15:00+07:00">9999999542.65</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy37">
+<value time="2021-06-22T05:15:00+07:00">2264341.87</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy38">
+<value time="2021-06-22T05:15:00+07:00">7197336.07</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy39">
+<value time="2021-06-22T05:15:00+07:00">2258299.29</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy40">
+<value time="2021-06-22T05:15:00+07:00">7891285.87</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy41">
+<value time="2021-06-22T05:15:00+07:00">2281013.00</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy42">
+<value time="2021-06-22T05:15:00+07:00">25517.38</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy43">
+<value time="2021-06-22T05:15:00+07:00">11987.34</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy44">
+<value time="2021-06-22T05:15:00+07:00">94036147.40</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy45">
+<value time="2021-06-22T05:15:00+07:00">16156.50</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy46">
+<value time="2021-06-22T05:15:00+07:00">76863793.66</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy47">
+<value time="2021-06-22T05:15:00+07:00">9111.07</value>
+</point>
+<point id="http://bems.smartive.co.th/lido/floor1/control/mbm1/acc_Energy48">
+<value time="2021-06-22T05:15:00+07:00">68838166.25</value>
+</point>
+</pointSet>
+</body>
+</transport>
+</ns2:dataRQ>
+</soapenv:Body>
+</soapenv:Envelope>
