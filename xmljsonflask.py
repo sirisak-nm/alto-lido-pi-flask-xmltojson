@@ -46,6 +46,8 @@ def index():
         
         try:
         # Create IoTHubRegistryManager
+            print("----- start -----\n")
+            print("----- set parameter for connect to cosmosDB -----\n")
             registry_manager = IoTHubRegistryManager(CONNECTION_STRING)
 
             #print ( 'Sending message: {0}'.format(i) )
@@ -54,8 +56,11 @@ def index():
             props={}
             props.update(contentType = "application/json")
 
+            print("----- save data to cosmosDB -----\n")
+
             registry_manager.send_c2d_message(DEVICE_ID, data, properties=props)
-            input("Press Enter to continue...\n")
+            #input("Press Enter to continue...\n")
+            print("----- end -----\n")
 
         except Exception as ex:
             print ( f"Unexpected error {ex}" )
