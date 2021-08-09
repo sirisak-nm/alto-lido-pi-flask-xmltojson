@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######`
+Flask
+xmltodict
+requests
+pytz
+azure-iot-hub
