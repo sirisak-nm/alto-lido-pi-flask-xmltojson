@@ -39,7 +39,7 @@ def index():
             "type" : "mbmmonitor",
             "timestamp": t,
             "datetime": str(d),
-            "meter_data" : meter_data
+            "meter_data" : "meter_data"
         }
         print("----- Response data -----\n")
         print(res)
