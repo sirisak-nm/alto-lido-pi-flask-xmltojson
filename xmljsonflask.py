@@ -24,7 +24,6 @@ def index():
         meter_data = []
         for point in mbm:
             m = {
-                "device_id":"mbm1_id",
                 "point_id":point["@id"],
                 "value_time":point["value"]["@time"],
                 "value":point["value"]["#text"]
@@ -36,6 +35,7 @@ def index():
         
         #Response Structure
         res = {
+            "device_id":"mbm1_id",
             "type" : "mbmmonitor",
             "timestamp": t,
             "datetime": str(d),
