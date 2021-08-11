@@ -5,10 +5,29 @@ import json
 from datetime import datetime
 import time
 import pytz
-from azure.iot.hub import IoTHubRegistryManager
+#from azure.iot.hub import IoTHubRegistryManager
+from azure.iot.device import IoTHubDeviceClient
+'''
+from azure.iot.device import IoTHubDeviceClient
 
-CONNECTION_STRING = "altolido.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=hb9hjoQJSbSfBTbyCFEmiB+J6/zp2Aht0/t1eWInuQ0="
-DEVICE_ID = "lidomonitor"
+
+CONNECTION_STRING = "HostName=altolido.azure-devices.net;DeviceId=altolido_flask;SharedAccessKey=+4mufV2azfRfCGtrJc43/dtzcn/zCuR7yvfFceBLpKA="
+device_client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
+
+device_client.connect()
+
+message_temp = {
+ "xx": "yy"
+}
+msg = json.dumps(message_temp)
+
+device_client.send_message(msg)
+'''
+
+#CONNECTION_STRING = "HostName=altoiothubprod.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=QYeYx2dZK4WYhtfBePlPlJ9wcEkqREZyReaUbDmowT8="
+#DEVICE_ID = "lidomonitor"
+CONNECTION_STRING = "HostName=altolido.azure-devices.net;DeviceId=altolido_flask;SharedAccessKey=+4mufV2azfRfCGtrJc43/dtzcn/zCuR7yvfFceBLpKA="
+device_client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
 
 
 app = Flask(__name__)
@@ -39,7 +58,8 @@ def index():
             "type" : "mbmmonitor",
             "timestamp": t,
             "datetime": str(d),
-            "meter_data" : "meter_data"
+            "meter_data" : meter_data,
+            "gatewayid":"altolido_flask"
         }
         print("----- Response data -----\n")
         print(res)
@@ -49,17 +69,20 @@ def index():
         # Create IoTHubRegistryManager
             print("----- start -----\n")
             print("----- set parameter for connect to cosmosDB -----\n")
-            registry_manager = IoTHubRegistryManager(CONNECTION_STRING)
+            
+            #registry_manager = IoTHubRegistryManager(CONNECTION_STRING)
 
             #print ( 'Sending message: {0}'.format(i) )
+            device_client.connect()
             data = json.dumps(res)
 
-            props={}
-            props.update(contentType = "application/json")
+            #props={}
+            #props.update(contentType = "application/json")
 
             print("----- save data to cosmosDB -----\n")
+            device_client.send_message(data)
 
-            registry_manager.send_c2d_message(DEVICE_ID, data, properties=props)
+            #registry_manager.send_c2d_message(DEVICE_ID, data, properties=props)
             #input("Press Enter to continue...\n")
             print("----- end -----\n")
 
