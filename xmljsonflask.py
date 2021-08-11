@@ -7,7 +7,7 @@ import time
 import pytz
 from azure.iot.hub import IoTHubRegistryManager
 
-CONNECTION_STRING = "HostName=altoiothubprod.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=QYeYx2dZK4WYhtfBePlPlJ9wcEkqREZyReaUbDmowT8="
+CONNECTION_STRING = "altolido.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=hb9hjoQJSbSfBTbyCFEmiB+J6/zp2Aht0/t1eWInuQ0="
 DEVICE_ID = "lidomonitor"
 
 
@@ -24,6 +24,7 @@ def index():
         meter_data = []
         for point in mbm:
             m = {
+                "device_id":"mbm1_id",
                 "point_id":point["@id"],
                 "value_time":point["value"]["@time"],
                 "value":point["value"]["#text"]
