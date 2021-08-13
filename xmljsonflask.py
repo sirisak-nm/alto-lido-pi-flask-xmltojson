@@ -32,6 +32,10 @@ device_client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRI
 
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return "<h1>Hello Azure!</h1>"
+
 @app.route('/axis2/services/FIAPStorage', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -100,5 +104,5 @@ def index():
     
     return 'success', 200
 
-if __name__ == '__main__':
-   app.run(debug=True, port=5000)
+#if __name__ == '__main__':
+#   app.run(debug=True, port=5000)
